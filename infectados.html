@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left 4 Dead 2 - Inicio</title>
+    <link rel="stylesheet" href="estilos/estiloInfectados.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo"><img src="imagenes/logojuego.png" alt="Logo Left 4 Dead 2" class="logo"></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="imagenes/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="infectados.html">Infectados</a></li>
+                    <li><a href="sobrevivientes.html">Sobrevivientes</a></li>
+                    <li><a href="armas.html">Armas</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content">
+            <h1>Infectados</h1>
+            <p>La plaga no piensa, no siente… solo avanza.</p>
+        </div>
+    </header>
+
+
+    <main class="contenidoGeneral">
+        <Section class="section-virus">
+            <img src="imagenes/sangre.png" alt="sangre" class="decoracion">
+            <img src="imagenes/germenes.png" alt="germenes" class="decoracion2">
+            <div class="Virus">
+                <div class="txt-virus">
+                    <h2>El Virus De La Gripe Verde</h2>
+                    <p class="txt-descripcion-virus">
+                        <strong>El virus de la Gripe Verde</strong> es un patógeno desconocido de propagación inmediata.
+                        A diferencia de una
+                        gripe común, no provoca fiebre ni síntomas tradicionales, sino una alteración neurológica
+                        extrema:
+                        pérdida de razón, agresividad descontrolada y resistencia física anormal.<br>
+                        El contagio ocurre por contacto directo con fluidos infectados y la incubación es prácticamente
+                        instantánea. No existe tratamiento ni cura. Solo un reducido grupo de individuos presenta
+                        inmunidad
+                        natural, convirtiéndose en los únicos capaces de resistir el brote y enfrentar a los infectados.
+                    </p>
+                </div>
+                <div class="img-virus">
+                    <img src="imagenes/virusgripe.jpg" alt="virusgripeverde" class="virus-img">
+                </div>
+        </Section>
+        <section class="section-infectados">
+            <h2>Tipos De Infectados</h2>
+            <div class="comunes">
+                <img src="imagenes/zombiescomunes.png" alt="Zcomunes" class="Zcomunes">
+                <div class="comunes-content">
+                    <h3>Zombies Comunes</h3>
+                    <p>La base del brote. Individuos infectados en etapas tempranas, carentes de raciocinio y autocontrol.
+                        Se mueven de forma errática, pero su número los convierte en una amenaza capaz de desbordar
+                        defensas. Su fuerza no radica en la habilidad individual, sino en la capacidad del virus para
+                        movilizarlos como enjambres coordinados que aplastan a sus objetivos por saturación.</p>
+                    <p><strong>Habilidades:</strong></p>
+                    <ul>
+                        <li>Ataque en hordas.</li>
+                        <li>Agresividad descontrolada.</li>
+                        <li>Resistencia variable.</li>
+                    </ul>
+                </div>
+            </div>
+            <h2 class="TituloEspeciales">⚠Infectados Especiales⚠</h2>
+            
+            <div class="Boomer">
+                <div class="infectado-content">
+                    <h3>Boomer</h3>
+                    <p>Una de las mutaciones más inestables del virus. El Boomer es un cuerpo distendido por acumulación masiva de bilis infecciosa. Su objetivo no es el combate directo, sino marcar a los sobrevivientes para atraer a la horda. Al vomitar o al explotar tras la muerte, cubre a las víctimas con fluidos que llaman inmediatamente a decenas de infectados comunes. Su sola presencia es peligrosa debido a su efecto multiplicador en el entorno.</p>
+                    <p><strong>Habilidades:</strong></p>
+                    <ul>
+                        <li>Vomitar bilis sobre objetivos.</li>
+                        <li>Atraer hordas de infectados.</li>
+                        <li>Explosión de bilis al morir.</li>
+                    </ul>
+                    <p class="txt-peligro">Peligro: Medio</p>
+                </div>
+                <img src="imagenes/Boomer.webp" alt="Boomer">
+            </div>
+            
+            <div class="Spitter">
+                <div class="infectado-content">
+                    <h3>Spitter</h3>
+                    <p>Producto de una mutación interna, la Spitter ha sufrido deformaciones visibles que afectan
+                        principalmente su mandíbula y sistema digestivo. Genera y expulsa un ácido corrosivo capaz de cubrir
+                        amplias zonas, obligando a los sobrevivientes a dispersarse o abandonar posiciones defensivas. No
+                        representa un gran riesgo en combate directo, pero su verdadera fuerza es el control del campo de
+                        batalla.</p>
+                    <p><strong>Habilidades:</strong></p>
+                    <ul>
+                        <li>Escupir ácido corrosivo.</li>
+                        <li>Cobertura de áreas amplias.</li>
+                        <li>Forzar reposicionamiento táctico.</li>
+                    </ul>
+                    <p class="txt-peligro">Peligro: Medio</p>
+                </div>
+                <img src="imagenes/spitter.webp" alt="Spitter">
+            </div>
+            
+            <div class="Smoker">
+                <div class="infectado-content">
+                    <h3>Smoker</h3>
+                    <p>El virus alteró de forma drástica su sistema respiratorio. Su torso y cuello están invadidos por
+                        tumores y malformaciones que le otorgan una capacidad inhumana: una lengua extensible que utiliza
+                        como arma letal de captura. Su función táctica es aislar a los sobrevivientes, arrastrándolos fuera
+                        de la formación para facilitar el ataque de la horda. Incluso tras la muerte sigue siendo un riesgo,
+                        liberando una nube de humo tóxico que reduce la visibilidad.</p>
+                    <p><strong>Habilidades:</strong></p>
+                    <ul>
+                        <li>Proyectar lengua extensible para atrapar.</li>
+                        <li>Arrastrar objetivos a larga distancia.</li>
+                        <li>Nube de humo al morir.</li>
+                    </ul>
+                    <p class="txt-peligro">Peligro: Medio–Alto</p>
+                </div>
+                <img src="imagenes/smoker.webp" alt="Smoker">
+            </div>
+            
+            <div class="Jockey">
+                <div class="infectado-content">
+                    <h3>Jockey</h3>
+                    <p>Deformado y encorvado, el Jockey es una representación grotesca de la locura. Ríe mientras se
+                        abalanza sobre sus presas, aferrándose a ellas con fuerza para dirigirlas hacia zonas peligrosas o
+                        lejos de su escuadra. El pasado de este infectado es incierto, pero las características de su
+                        comportamiento sugieren trastornos mentales preexistentes amplificados por la infección. Su amenaza
+                        principal no es el daño directo, sino la capacidad de separar y exponer a las víctimas.</p>
+                    <p><strong>Habilidades:</strong></p>
+                    <ul>
+                        <li>Saltar sobre sobrevivientes.</li>
+                        <li>Controlar el movimiento de la presa.</li>
+                        <li>Separar objetivos del grupo.</li>
+                    </ul>
+                    <p class="txt-peligro">Peligro: Alto</p>
+                </div>
+                <img src="imagenes/Jockey.webp" alt="Jockey">
+            </div>
+            
+            <div class="Charger">
+                <div class="infectado-content">
+                    <h3>Charger</h3>
+                    <p>El Charger es un infectado diseñado por la infección como ariete. Su brazo descomunal concentra toda
+                        la fuerza de su mutación, lo que le permite embestir con brutalidad, atrapando a un objetivo y
+                        estampándolo contra superficies sólidas. Su cuerpo hipertrofiado lo convierte en una máquina de
+                        impacto, utilizada por el virus para romper líneas defensivas y separar a los sobrevivientes.</p>
+                    <p><strong>Habilidades:</strong></p>
+                    <ul>
+                        <li>Embestida de gran alcance.</li>
+                        <li>Atrapar y arrastrar objetivos.</li>
+                        <li>Estrellar a la presa contra muros o el suelo.</li>
+                    </ul>
+                    <p class="txt-peligro">Peligro: Alto</p>
+                </div>
+                <img src="imagenes/Charger.webp" alt="Charger">
+            </div>
+            
+            <div class="Hunter">
+                <div class="infectado-content">
+                    <h3>Hunter</h3>
+                    <p>El Hunter representa el depredador definitivo. Con agilidad sobrehumana y un cuerpo adaptado para la
+                        caza, se lanza desde posiciones elevadas con ataques devastadores que incapacitan al objetivo. Se
+                        cree que en vida pertenecía a sectores marginales, reflejado en su vestimenta descuidada y su
+                        actitud solitaria. Es uno de los infectados más letales en emboscadas, especializado en atacar
+                        cuando el grupo está distraído o desorganizado.</p>
+                    <p><strong>Habilidades:</strong></p>
+                    <ul>
+                        <li>Saltos de gran alcance.</li>
+                        <li>Ataques sorpresa desde altura.</li>
+                        <li>Inmovilización prolongada de víctimas.</li>
+                    </ul>
+                    <p class="txt-peligro">Peligro: Muy Alto</p>
+                </div>
+                <img src="imagenes/Hunter.webp" alt="Hunter">
+            </div>
+            
+            <div class="Tank">
+                <div class="infectado-content">
+                    <h3>Tank</h3>
+                    <p>La cúspide de la infección. El Tank es una mutación de fuerza bruta, un organismo diseñado para
+                        destruir cualquier resistencia. Su cuerpo, recubierto de masa muscular hipertrofiada, le otorga
+                        resistencia sobrehumana y capacidad de destruir obstáculos. Se mueve con ferocidad y arrasa con todo
+                        a su paso, utilizando su entorno como arma al lanzar escombros. Requiere fuego concentrado de todo
+                        el equipo para ser neutralizado.</p>
+                    <p><strong>Habilidades:</strong></p>
+                    <ul>
+                        <li>Golpes devastadores que lanzan al objetivo.</li>
+                        <li>Destrucción de obstáculos y vehículos.</li>
+                        <li>Lanzamiento de escombros a larga distancia.</li>
+                    </ul>
+                    <p class="txt-peligro">Peligro: Crítico</p>
+                </div>
+                <img src="imagenes/Tank.webp" alt="Tank">
+            </div>
+            
+            <div class="Witch">
+                <div class="infectado-content">
+                    <h3>Witch</h3>
+                    <p>La Witch es uno de los infectados más enigmáticos. Permanece inmóvil, llorando en la oscuridad, en un
+                        estado de sufrimiento perpetuo. No ataca a menos que sea perturbada por ruido, luz o contacto, pero
+                        cuando es provocada se convierte en una fuerza letal capaz de incapacitar de un solo golpe. Todo
+                        indica que en vida fue una mujer joven, ahora consumida por la infección en un estado casi comatoso.
+                        La mejor táctica es evitarla a toda costa.</p>
+                    <p><strong>Habilidades:</strong></p>
+                    <ul>
+                        <li>Ataque instantáneo y letal al ser molestada.</li>
+                        <li>Incapacitación de un golpe.</li>
+                        <li>Estado pasivo mientras no se le provoque.</li>
+                    </ul>
+                    <p class="txt-peligro">Peligro: Crítico</p>
+                </div>
+                <img src="imagenes/witch.webp" alt="Witch">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-custom">
+        <div class="footer-logo">
+            <img src="imagenes/logojuego.png" alt="Logo del Juego" class="logo-png">
+        </div>
+        <div class="footer-content-wrapper">
+            <div class="footer-column social-section">
+                <h4 class="column-title">Redes Sociales del Juego</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/left4dead/?locale=es_LA" title="Facebook"><img
+                            src="imagenes/logoface.jpg" alt="Facebook"></a>
+                    <a href="https://x.com/left4dead2pc?lang=es" title="X (Twitter)"><img src="imagenes/logoX.jpg"
+                            alt="X"></a>
+                    <a href="https://www.instagram.com/_left4dead.2/?hl=es" title="Instagram"><img
+                            src="imagenes/logoinsta.jpg" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-column other-info">
+                <h4 class="column-title">Enlaces de Interés</h4>
+                <a href="#">Comunidad</a>
+                <a href="#">Soporte Técnico</a>
+                <a href="#">Reglas del Juego</a>
+                <a href="#">Acerca de Valve</a>
+            </div>
+        </div>
+        <div class="footer-legal">
+            <p>
+                © 2025 Valve Corporation. Todos los derechos reservados. Todas las marcas registradas pertenecen a sus
+                respectivos dueños en EE. UU. y otros países.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

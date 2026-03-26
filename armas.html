@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left 4 Dead 2 - Inicio</title>
+    <link rel="stylesheet" href="estilos/estilosArmas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo"><img src="imagenes/logojuego.png" alt="Logo Left 4 Dead 2" class="logo"></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="imagenes/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="infectados.html">Infectados</a></li>
+                    <li><a href="sobrevivientes.html">Sobrevivientes</a></li>
+                    <li><a href="armas.html">Armas</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content">
+            <h1>Armas</h1>
+            <p>En este mundo roto, el acero y la pólvora son la única esperanza.</p>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="armas-seccion">
+            <h2 class="armas-titulo">Tipos De Armas</h2>
+
+            <div class="categoria-contenido active" id="automaticas">
+                <h3 class="categoria-nombre">Automáticas</h3>
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel-automaticas">
+                        <div class="card">
+                            <img src="imagenes/ak47arma.png" alt="AK-47" class="arma-imagen">
+                            <div class="card-content">
+                                <h4 class="arma-nombre">AK-47</h4>
+                                <p class="arma-descripcion">Rifle de asalto de alto daño, perfecto para eliminar hordas de infectados.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="imagenes/m16.png" alt="M16" class="arma-imagen">
+                            <div class="card-content">
+                                <h4 class="arma-nombre">M16</h4>
+                                <p class="arma-descripcion">Rifle de asalto versátil con buena precisión y cadencia de fuego.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="imagenes/scar.png" alt="SCAR" class="arma-imagen">
+                            <div class="card-content">
+                                <h4 class="arma-nombre">FN SCAR</h4>
+                                <p class="arma-descripcion">Rifle de asalto moderno con excelente control y precisión.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="imagenes/uzi.png" alt="UZI" class="arma-imagen">
+                            <div class="card-content">
+                                <h4 class="arma-nombre">UZI</h4>
+                                <p class="arma-descripcion">Subfusil con buen daño y control, ideal para combates cercanos.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="imagenes/uzisilenciada.png" alt="UZI CON SILENCIADOR" class="arma-imagen">
+                            <div class="card-content">
+                                <h4 class="arma-nombre">UZI con Silenciador</h4>
+                                <p class="arma-descripcion">Subfusil con buen daño y silenciada para mayor sigilo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="btn prev" onclick="moverCarousel('automaticas', -1)">◀</button>
+                        <button class="btn next" onclick="moverCarousel('automaticas', 1)">▶</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categoria-contenido" id="escopetas">
+                <h3 class="categoria-nombre">Escopetas</h3>
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel-escopetas">
+                        <div class="card">
+                            <img src="imagenes/escopetacafe.png" alt="Escopeta Bomba" class="arma-imagen">
+                            <div class="card-content">
+                                <h4 class="arma-nombre">Escopeta de Corredera</h4>
+                                <p class="arma-descripcion">Potente escopeta que puede disparar granadas improvisadas.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="imagenes/escopetanegra.png" alt="Escopeta Cromada" class="arma-imagen">
+                            <div class="card-content">
+                                <h4 class="arma-nombre">Escopeta Cromada</h4>
+                                <p class="arma-descripcion">Potente escopeta que puede disparar granadas improvisadas.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="imagenes/spas12.png" alt="Escopeta Spas12" class="arma-imagen">
+                            <div class="card-content">
+                                <h4 class="arma-nombre">Escopeta de Combate</h4>
+                                <p class="arma-descripcion">Escopeta de corredera con buena cadencia y precisión.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="imagenes/escopetauto.png" alt="Escopeta Automática" class="arma-imagen">
+                            <div class="card-content">
+                                <h4 class="arma-nombre">Escopeta Automática</h4>
+                                <p class="arma-descripcion">Escopeta de disparo rápido, perfecta para situaciones de emergencia.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="btn prev" onclick="moverCarousel('escopetas', -1)">◀</button>
+                        <button class="btn next" onclick="moverCarousel('escopetas', 1)">▶</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categoria-contenido" id="pistolas">
+                <h3 class="categoria-nombre">Pistolas</h3>
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel-pistolas">
+                        <div class="card">
+                            <img src="imagenes/normal.png" alt="Pistola 9mm" class="arma-imagen">
+                            <div class="card-content">
+                                <h4 class="arma-nombre">Pistola 9mm</h4>
+                                <p class="arma-descripcion">Pistola estándar, precisa y con buena capacidad de munición.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="imagenes/magnum.png" alt="Magnum .44" class="arma-imagen">
+                            <div class="card-content">
+                                <h4 class="arma-nombre">Magnum .44</h4>
+                                <p class="arma-descripcion">Revólver de alto poder, capaz de derribar infectados con un solo disparo.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="imagenes/dobles.png" alt="Pistolas Duales" class="arma-imagen">
+                            <div class="card-content">
+                                <h4 class="arma-nombre">Pistolas Duales</h4>
+                                <p class="arma-descripcion">Dos pistolas 9mm que permiten un alto volumen de fuego.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="btn prev" onclick="moverCarousel('pistolas', -1)">◀</button>
+                        <button class="btn next" onclick="moverCarousel('pistolas', 1)">▶</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categoria-contenido" id="melee">
+                <h3 class="categoria-nombre">Armas Cuerpo a Cuerpo</h3>
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel-melee">
+                        <div class="card">
+                            <img src="imagenes/katana.png" alt="Katana" class="arma-imagen">
+                            <div class="card-content">
+                                <h4 class="arma-nombre">Katana</h4>
+                                <p class="arma-descripcion">Espada japonesa extremadamente afilada, letal en manos expertas.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="imagenes/hacha.png" alt="Hacha de Bombero" class="arma-imagen">
+                            <div class="card-content">
+                                <h4 class="arma-nombre">Hacha de Bombero</h4>
+                                <p class="arma-descripcion">Hacha pesada que causa daño devastador a los infectados.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="imagenes/machete.png" alt="Machete" class="arma-imagen">
+                            <div class="card-content">
+                                <h4 class="arma-nombre">Machete</h4>
+                                <p class="arma-descripcion">Cuchillo largo ideal para ataques rápidos y letales.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="imagenes/bate.png" alt="Bate de Béisbol" class="arma-imagen">
+                            <div class="card-content">
+                                <h4 class="arma-nombre">Bate de Béisbol</h4>
+                                <p class="arma-descripcion">Arma contundente que puede noquear a múltiples infectados.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="imagenes/palanca.png" alt="palanca" class="arma-imagen">
+                            <div class="card-content">
+                                <h4 class="arma-nombre">Palanca</h4>
+                                <p class="arma-descripcion">Arma contundente especial para la agilidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="btn prev" onclick="moverCarousel('melee', -1)">◀</button>
+                        <button class="btn next" onclick="moverCarousel('melee', 1)">▶</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/armas.js"></script>
+
+    <footer class="footer-custom">
+    
+
+    <div class="footer-logo">
+        <img src="imagenes/logojuego.png" alt="Logo del Juego" class="logo-png">
+    </div>
+    <div class="footer-content-wrapper">
+        <div class="footer-column social-section">
+            <h4 class="column-title">Redes Sociales del Juego</h4>
+            <div class="social-links">
+                <a href="https://www.facebook.com/left4dead/?locale=es_LA" title="Facebook"><img src="imagenes/logoface.jpg" alt="Facebook"></a>
+                <a href="https://x.com/left4dead2pc?lang=es" title="X (Twitter)"><img src="imagenes/logoX.jpg" alt="X"></a>
+                <a href="https://www.instagram.com/_left4dead.2/?hl=es" title="Instagram"><img src="imagenes/logoinsta.jpg" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-column other-info">
+            <h4 class="column-title">Enlaces de Interés</h4>
+            <a href="#">Comunidad</a>
+            <a href="#">Soporte Técnico</a>
+            <a href="#">Reglas del Juego</a>
+            <a href="#">Acerca de Valve</a>
+        </div>
+    </div>
+    <div class="footer-legal">
+        <p>
+            © 2025 Valve Corporation. Todos los derechos reservados. Todas las marcas registradas pertenecen a sus respectivos dueños en EE. UU. y otros países.
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

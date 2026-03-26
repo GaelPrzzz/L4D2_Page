@@ -1,0 +1,403 @@
+:root {
+  --primary-color: #c1121f;
+  --secondary-color: #f5cb5c;
+  --dark-bg: #0a0a0a;
+  --card-bg: #1e1e1e;
+  --text-light: #cccccc;
+}
+
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  overflow-x: hidden; 
+  min-height: 100vh;
+  background: #0f0f0f;
+  color: #fff;
+  display: block;
+}
+
+h1, h2, h3 {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.6)),
+        url(../imagenes/fondoarmas.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;       
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #c1121f;
+    display: block;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.menu .navbar ul li a:hover{
+    color: #f5cb5c;
+    transform: translateY(-5px);
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.header-content h1{
+    font-size: 75px;
+    line-height: 80px;
+    color: #c1121f;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p{
+    font-size: 25px;
+    color: #f5cb5c;
+    padding: 0 5%;
+    margin-bottom: 25px;
+}
+
+
+.armas-seccion {
+    padding: 80px 20px;
+    background: var(--dark-bg);
+    min-height: 100vh;
+}
+
+.armas-titulo {
+    text-align: center;
+    font-size: 55px;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.categoria-contenido {
+    display: none;
+    margin-bottom: 80px;
+}
+
+.categoria-contenido.active {
+    display: block;
+}
+
+.categoria-nombre {
+    text-align: center;
+    font-size: 32px;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    min-height: 400px;
+    position: relative;
+}
+
+.card {
+    background: var(--card-bg);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+    position: absolute;
+}
+
+.arma-imagen {
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.card-content {
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.arma-nombre {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.arma-descripcion {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+
+.carousel-controls {
+    display: none;
+}
+
+
+.footer-custom {
+    background-color: #1c1c1c; 
+    color: #cccccc; 
+    padding: 0 50px 10px; 
+    font-family: 'Roboto', Arial, sans-serif;
+    width: 100%;
+    clear: both; 
+    display: block; 
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    text-align: center;
+    padding: 30px 0 25px; 
+}
+
+.logo-png {
+    width: 60px; 
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+}
+
+.footer-content-wrapper {
+    display: flex;
+    justify-content: space-around; 
+    gap: 40px; 
+    padding: 30px 0;
+    border-top: 1px solid #c1121f; 
+}
+
+.footer-column {
+    min-width: 200px; 
+}
+
+.column-title {
+    color: white; 
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-column a {
+    display: block; 
+    color: #cccccc;
+    text-decoration: none;
+    margin-bottom: 5px; 
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.footer-column a:hover {
+    color: #c1121f; 
+}
+
+.social-links {
+    display: flex; 
+    flex-direction: row; 
+    gap: 15px; 
+}
+
+.social-links a {
+    display: inline-block; 
+}
+
+.social-links img {
+    width: 35px; 
+    height: 35px;
+    border-radius: 8px; 
+    transition: transform 0.2s;
+    vertical-align: middle; 
+}
+
+.social-links img:hover {
+    transform: translateY(-3px); 
+}
+
+.footer-legal {
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+.footer-legal p {
+    font-size: 12px;
+    color: rgba(204, 204, 204, 0.5); 
+    margin: 0;
+}
+
+
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    
+    .header-content p {
+        font-size: 18px;
+    }
+    
+    .armas-titulo {
+        font-size: 40px;
+    }
+    
+    .carousel-container {
+        padding: 0 40px;
+    }
+    
+    .card {
+        width: 250px;
+        min-height: 300px;
+    }
+    
+    .arma-imagen {
+        width: 180px;
+        height: 120px;
+    }
+    
+    .footer-custom {
+        padding: 30px 20px 10px;
+    }
+
+    .footer-content-wrapper {
+        flex-direction: column; 
+        text-align: center;
+        gap: 30px;
+        border-top: 1px solid #c1121f; 
+    }
+
+    .footer-column {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .social-links {
+        justify-content: center; 
+    }
+}
+
+@media (max-width: 480px) {
+    .armas-seccion {
+        padding: 50px 15px;
+    }
+    
+    .header-content h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    
+    .header-content p {
+        font-size: 16px;
+    }
+    
+    .armas-titulo {
+        font-size: 32px;
+    }
+    
+    .carousel-container {
+        padding: 0 20px;
+    }
+    
+    .card {
+        width: 220px;
+        min-height: 280px;
+    }
+    
+    .arma-imagen {
+        width: 160px;
+        height: 100px;
+    }
+    
+    .categoria-nombre {
+        font-size: 24px;
+    }
+}
